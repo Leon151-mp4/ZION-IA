@@ -1,0 +1,184 @@
+{
+    "dataset": [
+        {
+            "text": "Olá, tudo bem com você?",
+            "label": "conversa"
+        },
+        {
+            "text": "Oi! Como vai o seu dia?",
+            "label": "conversa"
+        },
+        {
+            "text": "Bom dia! Espero que esteja tendo um ótimo dia.",
+            "label": "conversa"
+        },
+        {
+            "text": "Boa tarde, como estão as coisas por aí?",
+            "label": "conversa"
+        },
+        {
+            "text": "oi",
+            "label": "conversa"
+        },
+        {
+            "text": "eai meu brother",
+            "label": "conversa"
+        },
+        {
+            "text": "E aí, beleza?",
+            "label": "conversa"
+        },
+        {
+            "text": "Oi, sumido! Quanto tempo.",
+            "label": "conversa"
+        },
+        {
+            "text": "Que tempo maluco hoje, né?",
+            "label": "conversa"
+        },
+        {
+            "text": "Tudo ótimo por aqui, e com você?",
+            "label": "conversa"
+        },
+        {
+            "text": "Só jogando conversa fora.",
+            "label": "conversa"
+        },
+        {
+            "text": "Estou apenas relaxando um pouco.",
+            "label": "conversa"
+        },
+        {
+            "text": "Fala aí, mano, tranquilo?",
+            "label": "conversa"
+        },
+        {
+            "text": "Opa, beleza por aí?",
+            "label": "conversa"
+        },
+        {
+            "text": "E aí, o que me conta de bom?",
+            "label": "conversa"
+        },
+        {
+            "text": "Tudo certo na medida do possível.",
+            "label": "conversa"
+        },
+        {
+            "text": "Qual é a capital da França?",
+            "label": "pergunta"
+        },
+        {
+            "text": "Como eu faço para chegar ao centro da cidade?",
+            "label": "pergunta"
+        },
+        {
+            "text": "Que horas abre o supermercado amanhã?",
+            "label": "pergunta"
+        },
+        {
+            "text": "Você sabe quanto custa uma passagem de avião?",
+            "label": "pergunta"
+        },
+        {
+            "text": "Qual é a previsão do tempo para este fim de semana?",
+            "label": "pergunta"
+        },
+        {
+            "text": "Como funciona o motor de um carro elétrico?",
+            "label": "pergunta"
+        },
+        {
+            "text": "Onde fica o restaurante mais próximo daqui?",
+            "label": "pergunta"
+        },
+        {
+            "text": "Quem escreveu o livro Dom Casmurro?",
+            "label": "pergunta"
+        },
+        {
+            "text": "Por que o céu é azul?",
+            "label": "pergunta"
+        },
+        {
+            "text": "Qual o significado da palavra empatia?",
+            "label": "pergunta"
+        },
+        {
+            "text": "Sabe me dizer que dia é hoje?",
+            "label": "pergunta"
+        },
+        {
+            "text": "Quanto tempo demora para assar um bolo?",
+            "label": "pergunta"
+        },
+        {
+            "text": "Você tem ideia de onde deixei minhas chaves?",
+            "label": "pergunta"
+        },
+        {
+            "text": "Como eu faço pra resetar a senha?",
+            "label": "pergunta"
+        },
+        {
+            "text": "Tchau! Até logo.",
+            "label": "despedida"
+        },
+        {
+            "text": "Até amanhã, nos vemos no trabalho.",
+            "label": "despedida"
+        },
+        {
+            "text": "Preciso ir nessa agora, um abraço!",
+            "label": "despedida"
+        },
+        {
+            "text": "Tenha uma boa noite, tchau.",
+            "label": "despedida"
+        },
+        {
+            "text": "Até a próxima semana!",
+            "label": "despedida"
+        },
+        {
+            "text": "Fui! Depois a gente se fala.",
+            "label": "despedida"
+        },
+        {
+            "text": "Adeus, espero te ver em breve.",
+            "label": "despedida"
+        },
+        {
+            "text": "Me despedindo por hoje, valeu!",
+            "label": "despedida"
+        },
+        {
+            "text": "Tenho que rodar, até mais.",
+            "label": "despedida"
+        },
+        {
+            "text": "Tchauzinho!",
+            "label": "despedida"
+        },
+        {
+            "text": "falou",
+            "label": "despedida"
+        },
+        {
+            "text": "flw",
+            "label": "despedida"
+        },
+        {
+            "text": "Vou vazar, abraços!",
+            "label": "despedida"
+        },
+        {
+            "text": "Até mais ver!",
+            "label": "despedida"
+        },
+        {
+            "text": "Vou indo nessa, bom descanso.",
+            "label": "despedida"
+        }
+    ]
+}
