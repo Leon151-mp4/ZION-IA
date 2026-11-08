@@ -14,3 +14,7 @@ data/data.json
 
 # KDE
 .directory
+
+
+# Drafts
+drafts/

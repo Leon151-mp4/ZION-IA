@@ -1,7 +1,6 @@
 #imports of libarys
 import numpy as np
 import json
-from sklearn.feature_extraction.text import TfidfVectorizer
 #Standard values:
 
 #Value of input for the neural network use to calc math.
@@ -44,6 +43,7 @@ z2 = None
 
 #start to due TF-IDF
 def Vectorizer(dataList):
+        from sklearn.feature_extraction.text import TfidfVectorizer
 
         vectorize = TfidfVectorizer(token_pattern=r"(?u)\b\w+\b")
 
@@ -144,7 +144,10 @@ def inputC(tValue, iValue):
 #This is for train the ia but it will be move to training.py
         
 #Import of dataset.json
-with open("/home/leonardo/Documentos/projects/chatbot/data/dataset.json", "r", encoding="utf-8") as f:
+from pathlib import Path
+current_file = Path(__file__).resolve()
+dataset_path = current_file.parent.parent / "data" / "dataset.json"
+with open(dataset_path, "r", encoding="utf-8") as f:
      dataJson = json.load(f)
      dataSet = dataJson["dataset"]
 

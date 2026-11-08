@@ -37,16 +37,13 @@ def checkData(dataList):
     elif dataList:
         return (True, "Working")
 state["system"] = checkData(dataList)
+
+
 #first while true
 returnValue = None
 while True:
     inputValue = input(">> :")
-
-
-    dataChannel = dataList.append(inputValue)
-    state["system"] = checkData(dataList)
-    checkState(state)
-
+    returnValue = None
     data["input"] = inputValue
     #ifs and elses
     if inputValue in commandsList:
@@ -54,9 +51,15 @@ while True:
         
         data["return"] = returnValue
 
-    if returnValue == (True, "exit"):
-        break
+        if returnValue == (True, "exit"):
+            break
 
-    if returnValue == (True, "showslogo"):
-        for i in logo:
-            print(i)
+        if returnValue == (True, "showslogo"):
+            for i in logo:
+                print(i)
+        continue
+    dataChannel = inputValue
+    dataList.append(dataChannel)
+
+    state["system"] = checkData(dataList)
+    checkState(state)
