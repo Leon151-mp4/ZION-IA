@@ -10,9 +10,7 @@ iValue = None
 tValue = None
 
 #control Value: decide who the network will process.
-#snapshots import dataset.json to here
-snapshot = []
-snapshot2 = []
+
 
 #Data list: usage for data of input.
 dataList = []
@@ -20,20 +18,6 @@ dataList = []
 #State: where the model check if the sistem is idle or working
 state = {}
 
-#ClassY: are the indice of right class
-classY = []
-
-#TargetY: the compative class.
-targetY = []
-
-#TargetX: is a temporary variable create for TargetY.
-targetX = [0, 0, 0]
-
-#ramV: that's dict is for amazen some  things important.
-ramV = {
-     "indice": None,
-     "target": None
-}
 
 #z1: output value for response.
 z1 = None
@@ -140,38 +124,6 @@ def inputC(tValue, iValue):
      z1.setflags(write=False)
           
 
-#___ TEMPORARY ___
-#This is for train the ia but it will be move to training.py
-        
-#Import of dataset.json
-from pathlib import Path
-current_file = Path(__file__).resolve()
-dataset_path = current_file.parent.parent / "data" / "dataset.json"
-with open(dataset_path, "r", encoding="utf-8") as f:
-     dataJson = json.load(f)
-     dataSet = dataJson["dataset"]
-
-
-classMap = {
-     'conversa': 0,
-     'pergunta':  1,
-     'despedida': 2
-}
-
-
-"""
-da uma pequena revisada aqui.. DE NOVO TU VAI PRECISAR EXPLICAR ISSO PRO RECRUTADOR CARA
-"""
-for i in dataSet:
-     snapshot.append(i["label"])
-     snapshot2.append(i["text"])
-for element in snapshot:
-     classY.append(classMap[element])
-
-for h in classY:
-     targetX = [0, 0, 0]
-     targetX[h] = 1
-     targetY.append(targetX)
 
 
 
@@ -179,33 +131,6 @@ for h in classY:
 
 
 
-
-
-#CalcLoss: calculate the loss.
-def calcLoss(z):
-
-     
-
-     l = -np.sum(ramV["target"] * np.log(z)) 
-     print("target: ", ramV["target"])
-     print("loss", l) 
-
-def trainingN():
-     w, w2, b, b2, z = neuralIns()
-
-
-     """
-     REVISAR ESSA PARTE.. QUANTAS VEZES TENHO QUE REPETIR???
-     """
-     for indice, (target, text) in enumerate(zip(targetY, snapshot2)):
-          ramV["indice"] = indice
-          ramV["target"] = target
-          global tValue
-          tValue = Vectorizer([text])
-          Hvalue = calcLoss(z)
-
-     
-     
 
 
 
